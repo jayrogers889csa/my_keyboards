@@ -17,8 +17,8 @@
     <![endif]-->
 </head>
 <body>
-  <div class="container-fluid">
-    <div class="row"><div class="col-xs-12 col-md-8">
+  <div class="container">
+  <div class="row"><div class="col-xs-12">
     <header>
       <h1><a href="/">Keyboard App</a></h1>
       <nav role="primary">
@@ -34,12 +34,11 @@
       <p class="alert"><%= alert %></p>
     </aside>
 
-  <div class="content row"><div class="col-xs-12"><%= yield %></div></div>
+  <%= yield %>
 
-</div></div><!--.row / .col-xs-10 -->
-</div><!-- .container-fluid -->
-
+  <br><br><br>
   <footer class="footer well"><div class="container-fluid">I'm a footer!</div></footer>
-
+</div></div>
+</div><!-- .container-->
 </body>
 </html>
