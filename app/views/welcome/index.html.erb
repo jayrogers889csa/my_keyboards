@@ -6,7 +6,8 @@
 </ul>
 
 <h2>Site Routes</h2>
-<table cellpadding="5" align="center" border="1">
+<div class="table-responsive">
+<table class="table" cellpadding="5" align="center" border="1">
                   <tr><th>Prefix</th> <th>Verb</th>   <th>URI Pattern</th>                                 <th>Controller#Action</th></tr>
         <tr><td>new_user_session</td> <td>GET    </td><td>/members/sign_in(.:format)                  </td><td> devise/sessions#new</td></tr>
             <tr><td>user_session</td> <td>POST   </td><td>/members/sign_in(.:format)                  </td><td> devise/sessions#create</td></tr>
@@ -40,4 +41,4 @@
                         <tr><td></td> <td>PUT    </td><td>/users/:id(.:format)                        </td><td> users#update</td></tr>
                         <tr><td></td> <td>DELETE </td><td>/users/:id(.:format)                        </td><td> users#destroy</td></tr>
                     <tr><td>root</td> <td>GET    </td><td>/                                           </td><td> welcome#index</td></tr>
-              </table>
+              </table></div><!--.table-responsive-->
