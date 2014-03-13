@@ -1,0 +1,6 @@
+<h2>All Users</h2>
+<ol>
+<% @users.each do |u| %>
+<li><%= link_to "#{u.f_name} #{u.l_name}", user_path(u) %></li>
+<% end %>
+</ol>

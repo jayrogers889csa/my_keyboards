@@ -1,3 +1,43 @@
+<h2>Current Users</h2>
+<ul>
 <% @users.each do |u| %>
-<%= u.f_name %>
+<li><%= link_to "#{u.f_name} #{u.l_name}", user_path(u) %></li>
 <% end %>
+</ul>
+
+<h2>Site Routes</h2>
+<table cellpadding="5" align="center" border="1">
+                  <tr><th>Prefix</th> <th>Verb</th>   <th>URI Pattern</th>                                 <th>Controller#Action</th></tr>
+        <tr><td>new_user_session</td> <td>GET    </td><td>/members/sign_in(.:format)                  </td><td> devise/sessions#new</td></tr>
+            <tr><td>user_session</td> <td>POST   </td><td>/members/sign_in(.:format)                  </td><td> devise/sessions#create</td></tr>
+    <tr><td>destroy_user_session</td> <td>DELETE </td><td>/members/sign_out(.:format)                 </td><td> devise/sessions#destroy</td></tr>
+           <tr><td>user_password</td> <td>POST   </td><td>/members/password(.:format)                 </td><td> devise/passwords#create</td></tr>
+       <tr><td>new_user_password</td> <td>GET    </td><td>/members/password/new(.:format)             </td><td> devise/passwords#new</td></tr>
+      <tr><td>edit_user_password</td> <td>GET    </td><td>/members/password/edit(.:format)            </td><td> devise/passwords#edit</td></tr>
+                        <tr><td></td> <td>PATCH  </td><td>/members/password(.:format)                 </td><td> devise/passwords#update</td></tr>
+                        <tr><td></td> <td>PUT    </td><td>/members/password(.:format)                 </td><td> devise/passwords#update</td></tr>
+<tr><td>cancel_user_registration</td> <td>GET    </td><td>/members/cancel(.:format)                   </td><td> devise/registrations#cancel</td></tr>
+       <tr><td>user_registration</td> <td>POST   </td><td>/members(.:format)                          </td><td> devise/registrations#create</td></tr>
+   <tr><td>new_user_registration</td> <td>GET    </td><td>/members/sign_up(.:format)                  </td><td> devise/registrations#new</td></tr>
+  <tr><td>edit_user_registration</td> <td>GET    </td><td>/members/edit(.:format)                     </td><td> devise/registrations#edit</td></tr>
+                        <tr><td></td> <td>PATCH  </td><td>/members(.:format)                          </td><td> devise/registrations#update</td></tr>
+                        <tr><td></td> <td>PUT    </td><td>/members(.:format)                          </td><td> devise/registrations#update</td></tr>
+                        <tr><td></td> <td>DELETE </td><td>/members(.:format)                          </td><td> devise/registrations#destroy</td></tr>
+          <tr><td>user_keyboards</td> <td>GET    </td><td>/users/:user_id/keyboards(.:format)         </td><td> keyboards#index</td></tr>
+                        <tr><td></td> <td>POST   </td><td>/users/:user_id/keyboards(.:format)         </td><td> keyboards#create</td></tr>
+       <tr><td>new_user_keyboard</td> <td>GET    </td><td>/users/:user_id/keyboards/new(.:format)     </td><td> keyboards#new</td></tr>
+      <tr><td>edit_user_keyboard</td> <td>GET    </td><td>/users/:user_id/keyboards/:id/edit(.:format)</td><td> keyboards#edit</td></tr>
+           <tr><td>user_keyboard</td> <td>GET    </td><td>/users/:user_id/keyboards/:id(.:format)     </td><td> keyboards#show</td></tr>
+                        <tr><td></td> <td>PATCH  </td><td>/users/:user_id/keyboards/:id(.:format)     </td><td> keyboards#update</td></tr>
+                        <tr><td></td> <td>PUT    </td><td>/users/:user_id/keyboards/:id(.:format)     </td><td> keyboards#update</td></tr>
+                        <tr><td></td> <td>DELETE </td><td>/users/:user_id/keyboards/:id(.:format)     </td><td> keyboards#destroy</td></tr>
+                   <tr><td>users</td> <td>GET    </td><td>/users(.:format)                            </td><td> users#index</td></tr>
+                        <tr><td></td> <td>POST   </td><td>/users(.:format)                            </td><td> users#create</td></tr>
+                <tr><td>new_user</td> <td>GET    </td><td>/users/new(.:format)                        </td><td> users#new</td></tr>
+               <tr><td>edit_user</td> <td>GET    </td><td>/users/:id/edit(.:format)                   </td><td> users#edit</td></tr>
+                    <tr><td>user</td> <td>GET    </td><td>/users/:id(.:format)                        </td><td> users#show</td></tr>
+                        <tr><td></td> <td>PATCH  </td><td>/users/:id(.:format)                        </td><td> users#update</td></tr>
+                        <tr><td></td> <td>PUT    </td><td>/users/:id(.:format)                        </td><td> users#update</td></tr>
+                        <tr><td></td> <td>DELETE </td><td>/users/:id(.:format)                        </td><td> users#destroy</td></tr>
+                    <tr><td>root</td> <td>GET    </td><td>/                                           </td><td> welcome#index</td></tr>
+              </table>

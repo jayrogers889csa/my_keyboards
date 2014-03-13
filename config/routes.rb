@@ -2,7 +2,7 @@ MyKeyboards::Application.routes.draw do
 
   
   devise_for :users, path: "members"
-  
+
   resources :users do
     resources :keyboards
   end
