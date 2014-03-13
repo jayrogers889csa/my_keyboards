@@ -1,3 +1,2 @@
-<h2><%= current_user.f_name %>'s Profile</h2>
-
-<p><%= link_to "My Keyboards", user_keyboards_path(current_user) %></p>
+<h2><%= @user.f_name %>'s Profile <% if current_user.id == @user.id %>(This is YOU) <% end %></h2>
+<p><%= link_to "#{@user.f_name}'s Keyboards", user_keyboards_path(current_user) %></p>
