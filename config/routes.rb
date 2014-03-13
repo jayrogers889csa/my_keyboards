@@ -4,6 +4,7 @@ MyKeyboards::Application.routes.draw do
 
   get "keys", :to => 'keys#index'
 
+  get "/keys/new", :to => "keys#new" , as: :new_key      
 
 
   resources :keyboards
