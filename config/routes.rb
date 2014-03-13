@@ -4,8 +4,16 @@ MyKeyboards::Application.routes.draw do
 
   get "keys", :to => 'keys#index'
 
-  get "/keys/new", :to => "keys#new" , as: :new_key      
+  get "/keys/new", :to => "keys#new" , as: :new_key   
 
+  post "/keys", to: "keys#create", as: :key
+  get "/keys/:id/edit", to: "keys#edit", as: :edit_key
+
+ 
+  #key_path   GET   /keys/:id(.:format)   keys#show
+  #PATCH  /keys/:id(.:format)   keys#update
+  #PUT  /keys/:id(.:format)   keys#update
+  #DELETE   /keys/:id(.:format)   keys#destroy
 
   resources :keyboards
 

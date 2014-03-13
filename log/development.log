@@ -892,3 +892,278 @@ Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-03-13 06:30:31 -05
 
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-13 06:30:31 -0500
+
+
+Started GET "/keys/new" for 127.0.0.1 at 2014-03-13 06:38:44 -0500
+Processing by KeysController#new as HTML
+  Rendered keys/_form.html.erb (27.7ms)
+  Rendered keys/new.html.erb within layouts/application (30.4ms)
+Completed 200 OK in 46ms (Views: 39.3ms | ActiveRecord: 2.2ms)
+
+
+Started POST "/keys" for 127.0.0.1 at 2014-03-13 06:38:55 -0500
+
+ActionController::RoutingError (No route matches [POST] "/keys"):
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/tlroys/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/tlroys/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/tlroys/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/tlroys/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+  Rendered /Users/tlroys/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.4ms)
+  Rendered /Users/tlroys/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.9ms)
+  Rendered /Users/tlroys/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (46.2ms)
+
+
+Started POST "/keys" for 127.0.0.1 at 2014-03-13 06:39:03 -0500
+Processing by KeysController#show as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"IyvI8WWrZvsmNxueMLrIRMUJV985Q1kFbdUxodrA2uQ=", "key"=>{"frequency"=>"1"}, "commit"=>"Create Key"}
+Completed 404 Not Found in 7ms
+
+ActiveRecord::RecordNotFound (Couldn't find Key without an ID):
+  app/controllers/keys_controller.rb:67:in `set_key'
+
+
+  Rendered /Users/tlroys/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.1ms)
+  Rendered /Users/tlroys/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered /Users/tlroys/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.7ms)
+  Rendered /Users/tlroys/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (31.4ms)
+
+
+Started POST "/keys" for 127.0.0.1 at 2014-03-13 06:40:29 -0500
+Processing by KeysController#show as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"IyvI8WWrZvsmNxueMLrIRMUJV985Q1kFbdUxodrA2uQ=", "key"=>{"frequency"=>"1"}, "commit"=>"Create Key"}
+Completed 404 Not Found in 3ms
+
+ActiveRecord::RecordNotFound (Couldn't find Key without an ID):
+  app/controllers/keys_controller.rb:67:in `set_key'
+
+
+  Rendered /Users/tlroys/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.2ms)
+  Rendered /Users/tlroys/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered /Users/tlroys/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.7ms)
+  Rendered /Users/tlroys/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (26.5ms)
+
+
+Started GET "/keys" for 127.0.0.1 at 2014-03-13 06:40:32 -0500
+Processing by KeysController#index as HTML
+  [1m[36mKey Load (0.7ms)[0m  [1mSELECT "keys".* FROM "keys"[0m
+  Rendered keys/index.html.erb within layouts/application (10.1ms)
+Completed 200 OK in 20ms (Views: 18.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/keyboards.css?body=1" for 127.0.0.1 at 2014-03-13 06:40:32 -0500
+
+
+Started GET "/assets/keys.css?body=1" for 127.0.0.1 at 2014-03-13 06:40:32 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-03-13 06:40:32 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-13 06:40:32 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-13 06:40:32 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-13 06:40:32 -0500
+
+
+Started GET "/assets/keys.js?body=1" for 127.0.0.1 at 2014-03-13 06:40:32 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-13 06:40:32 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-03-13 06:40:32 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-03-13 06:40:32 -0500
+
+
+Started GET "/assets/keyboards.js?body=1" for 127.0.0.1 at 2014-03-13 06:40:32 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-13 06:40:32 -0500
+
+
+Started GET "/keys/new" for 127.0.0.1 at 2014-03-13 06:40:34 -0500
+Processing by KeysController#new as HTML
+  Rendered keys/_form.html.erb (18.1ms)
+  Rendered keys/new.html.erb within layouts/application (21.0ms)
+Completed 200 OK in 44ms (Views: 39.6ms | ActiveRecord: 2.4ms)
+
+
+Started POST "/keys" for 127.0.0.1 at 2014-03-13 06:40:35 -0500
+Processing by KeysController#show as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"IyvI8WWrZvsmNxueMLrIRMUJV985Q1kFbdUxodrA2uQ=", "key"=>{"frequency"=>""}, "commit"=>"Create Key"}
+Completed 404 Not Found in 5ms
+
+ActiveRecord::RecordNotFound (Couldn't find Key without an ID):
+  app/controllers/keys_controller.rb:67:in `set_key'
+
+
+  Rendered /Users/tlroys/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.1ms)
+  Rendered /Users/tlroys/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.1ms)
+  Rendered /Users/tlroys/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.9ms)
+  Rendered /Users/tlroys/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (34.0ms)
+
+
+Started GET "/keys/new" for 127.0.0.1 at 2014-03-13 06:41:06 -0500
+Processing by KeysController#new as HTML
+  Rendered keys/_form.html.erb (9.8ms)
+  Rendered keys/new.html.erb within layouts/application (11.7ms)
+Completed 200 OK in 85ms (Views: 76.7ms | ActiveRecord: 4.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-13 06:41:06 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-13 06:41:06 -0500
+
+
+Started GET "/assets/keyboards.css?body=1" for 127.0.0.1 at 2014-03-13 06:41:06 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-03-13 06:41:06 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-03-13 06:41:06 -0500
+
+
+Started GET "/assets/keys.css?body=1" for 127.0.0.1 at 2014-03-13 06:41:06 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-13 06:41:06 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-13 06:41:06 -0500
+
+
+Started GET "/assets/keyboards.js?body=1" for 127.0.0.1 at 2014-03-13 06:41:06 -0500
+
+
+Started GET "/assets/keys.js?body=1" for 127.0.0.1 at 2014-03-13 06:41:06 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-03-13 06:41:06 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-13 06:41:06 -0500
+
+
+Started POST "/keys" for 127.0.0.1 at 2014-03-13 06:41:09 -0500
+Processing by KeysController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"IyvI8WWrZvsmNxueMLrIRMUJV985Q1kFbdUxodrA2uQ=", "key"=>{"frequency"=>"1"}, "commit"=>"Create Key"}
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (12.6ms)[0m  [1mINSERT INTO "keys" ("created_at", "frequency", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", Thu, 13 Mar 2014 11:41:09 UTC +00:00], ["frequency", 1], ["updated_at", Thu, 13 Mar 2014 11:41:09 UTC +00:00]]
+  [1m[35m (0.6ms)[0m  COMMIT
+Redirected to 
+Completed 500 Internal Server Error in 33ms
+
+NoMethodError (undefined method `key_url' for #<KeysController:0x00000105053830>):
+  app/controllers/keys_controller.rb:31:in `block (2 levels) in create'
+  app/controllers/keys_controller.rb:29:in `create'
+
+
+  Rendered /Users/tlroys/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.3ms)
+  Rendered /Users/tlroys/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.7ms)
+  Rendered /Users/tlroys/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+  Rendered /Users/tlroys/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (36.3ms)
+
+
+Started POST "/keys" for 127.0.0.1 at 2014-03-13 06:41:24 -0500
+Processing by KeysController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"IyvI8WWrZvsmNxueMLrIRMUJV985Q1kFbdUxodrA2uQ=", "key"=>{"frequency"=>"1"}, "commit"=>"Create Key"}
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "keys" ("created_at", "frequency", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["created_at", Thu, 13 Mar 2014 11:41:24 UTC +00:00], ["frequency", 1], ["updated_at", Thu, 13 Mar 2014 11:41:24 UTC +00:00]]
+  [1m[36m (0.6ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/keys.2
+Completed 302 Found in 94ms (ActiveRecord: 3.6ms)
+
+
+Started GET "/keys.2" for 127.0.0.1 at 2014-03-13 06:41:24 -0500
+Processing by KeysController#index as 
+  [1m[35mKey Load (0.9ms)[0m  SELECT "keys".* FROM "keys"
+  Rendered keys/index.html.erb within layouts/application (31.4ms)
+Completed 500 Internal Server Error in 63ms
+
+ActionView::Template::Error (undefined method `edit_key_path' for #<#<Class:0x00000101390740>:0x000001013a34a8>):
+    15:       <tr>
+    16:         <td><%= key.frequency %></td>
+    17:         <td><%= link_to 'Show', key %></td>
+    18:         <td><%= link_to 'Edit', edit_key_path(key) %></td>
+    19:         <td><%= link_to 'Destroy', key, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    20:       </tr>
+    21:     <% end %>
+  app/views/keys/index.html.erb:18:in `block in _app_views_keys_index_html_erb___1532144205632768996_2157857200'
+  app/views/keys/index.html.erb:14:in `_app_views_keys_index_html_erb___1532144205632768996_2157857200'
+
+
+  Rendered /Users/tlroys/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.2ms)
+  Rendered /Users/tlroys/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.1ms)
+  Rendered /Users/tlroys/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (24.6ms)
+
+
+Started GET "/keys.2" for 127.0.0.1 at 2014-03-13 06:42:43 -0500
+Processing by KeysController#index as 
+  [1m[36mKey Load (0.5ms)[0m  [1mSELECT "keys".* FROM "keys"[0m
+  Rendered keys/index.html.erb within layouts/application (15.3ms)
+Completed 200 OK in 35ms (Views: 27.8ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/assets/keyboards.css?body=1" for 127.0.0.1 at 2014-03-13 06:42:43 -0500
+
+
+Started GET "/assets/keys.css?body=1" for 127.0.0.1 at 2014-03-13 06:42:43 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-13 06:42:43 -0500
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-03-13 06:42:43 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-13 06:42:43 -0500
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-03-13 06:42:43 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-03-13 06:42:43 -0500
+
+
+Started GET "/assets/keyboards.js?body=1" for 127.0.0.1 at 2014-03-13 06:42:43 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-13 06:42:43 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-13 06:42:43 -0500
+
+
+Started GET "/assets/keys.js?body=1" for 127.0.0.1 at 2014-03-13 06:42:43 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-13 06:42:43 -0500
