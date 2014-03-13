@@ -1,33 +1,3 @@
-<table cellpadding="10" border="1"><tr>  <th>Prefix Verb</th>   <th>URI Pattern</th>                               <th>Controller#Action</th>
-        <tr><td>new_user_session GET    </td><td>/users/sign_in(.:format)                     </td><td>devise/sessions#new</td></tr>
-            <tr><td>user_session POST   </td><td>/users/sign_in(.:format)                     </td><td>devise/sessions#create</td></tr>
-    <tr><td>destroy_user_session DELETE </td><td>/users/sign_out(.:format)                    </td><td>devise/sessions#destroy</td></tr>
-           <tr><td>user_password POST   </td><td>/users/password(.:format)                    </td><td>devise/passwords#create</td></tr>
-       <tr><td>new_user_password GET    </td><td>/users/password/new(.:format)                </td><td>devise/passwords#new</td></tr>
-      <tr><td>edit_user_password GET    </td><td>/users/password/edit(.:format)               </td><td>devise/passwords#edit</td></tr>
-<tr><td>                         PATCH  </td><td>/users/password(.:format)                    </td><td>devise/passwords#update</td></tr>
-<tr><td>                         PUT    </td><td>/users/password(.:format)                    </td><td>devise/passwords#update</td></tr>
-<tr><td>cancel_user_registration GET    </td><td>/users/cancel(.:format)                      </td><td>devise/registrations#cancel</td></tr>
-       <tr><td>user_registration POST   </td><td>/users(.:format)                             </td><td>devise/registrations#create</td></tr>
-   <tr><td>new_user_registration GET    </td><td>/users/sign_up(.:format)                     </td><td>devise/registrations#new</td></tr>
-  <tr><td>edit_user_registration GET    </td><td>/users/edit(.:format)                        </td><td>devise/registrations#edit</td></tr>
-<tr><td>                         PATCH  </td><td>/users(.:format)                             </td><td>devise/registrations#update</td></tr>
-<tr><td>                         PUT    </td><td>/users(.:format)                             </td><td>devise/registrations#update</td></tr>
-<tr><td>                         DELETE </td><td>/users(.:format)                             </td><td>devise/registrations#destroy</td></tr>
-          <tr><td>user_keyboards GET    </td><td>/users/:user_id/keyboards(.:format)          </td><td>keyboards#index</td></tr>
-<tr><td>                         POST   </td><td>/users/:user_id/keyboards(.:format)          </td><td>keyboards#create</td></tr>
-       <tr><td>new_user_keyboard GET    </td><td>/users/:user_id/keyboards/new(.:format)      </td><td>keyboards#new</td></tr>
-      <tr><td>edit_user_keyboard GET    </td><td>/users/:user_id/keyboards/:id/edit(.:format) </td><td>keyboards#edit</td></tr>
-           <tr><td>user_keyboard GET    </td><td>/users/:user_id/keyboards/:id(.:format)      </td><td>keyboards#show</td></tr>
-<tr><td>                         PATCH  </td><td>/users/:user_id/keyboards/:id(.:format)      </td><td>keyboards#update</td></tr>
-<tr><td>                         PUT    </td><td>/users/:user_id/keyboards/:id(.:format)      </td><td>keyboards#update</td></tr>
-<tr><td>                         DELETE </td><td>/users/:user_id/keyboards/:id(.:format)      </td><td>keyboards#destroy</td></tr>
-                   <tr><td>users GET    </td><td>/users(.:format)                             </td><td>users#index</td></tr>
-<tr><td>                         POST   </td><td>/users(.:format)                             </td><td>users#create</td></tr>
-                <tr><td>new_user GET    </td><td>/users/new(.:format)                         </td><td>users#new</td></tr>
-               <tr><td>edit_user GET    </td><td>/users/:id/edit(.:format)                    </td><td>users#edit</td></tr>
-                    <tr><td>user GET    </td><td>/users/:id(.:format)                         </td><td>users#show</td></tr>
-<tr><td>                         PATCH  </td><td>/users/:id(.:format)                         </td><td>users#update</td></tr>
-<tr><td>                         PUT    </td><td>/users/:id(.:format)                         </td><td>users#update</td></tr>
-<tr><td>                         DELETE </td><td>/users/:id(.:format)                         </td><td>users#destroy</td></tr>
-                    <tr><td>root GET    </td><td>/                                            </td><td>welcome#index</td></tr></table>
+<% @users.each do |u| %>
+<%= u.f_name %>
+<% end %>

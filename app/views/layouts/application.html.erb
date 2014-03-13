@@ -9,7 +9,12 @@
 <body>
   <header>
     <h1>Keyboard App</h1>
-    <nav>Nav goes here</nav>
+    <nav role="primary">Nav goes here
+      <ul class="nav primary">
+        <%= render 'devise/menu/registration_items' %>
+        <%= render 'devise/menu/login_items' %>
+      </ul>
+    </nav>
   </header>
 <p class="notice"><%= notice %></p>
 <p class="alert"><%= alert %></p>
