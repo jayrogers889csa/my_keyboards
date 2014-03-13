@@ -7,8 +7,15 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+  <header>
+    <h1>Keyboard App</h1>
+    <nav>Nav goes here</nav>
+  </header>
+<p class="notice"><%= notice %></p>
+<p class="alert"><%= alert %></p>
 
-<%= yield %>
+  <div class="content"><%= yield %></div>
+  <footer class="footer">I'm a footer!</footer>
 
 </body>
 </html>
